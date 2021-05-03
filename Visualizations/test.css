@@ -1,0 +1,11 @@
+#sidebar-wrapper {
+    background-image:url('/images/nav.jpg');
+    margin-left: -250px;
+    left: 250px;
+    width: 250px;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 1000;
+    transition: all 0.4s ease 0s;
+  }
