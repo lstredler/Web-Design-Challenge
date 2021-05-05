@@ -1,8 +1,21 @@
 /* Mainpage */
+body{
+  background-color: #cd92c0;
+}
 
 /* Style page content */
-.main {
-  margin-left: 10px; /* Same as the width of the sidebar */
-  padding: 0px 10px;
+.navbar{
+  max-height: 50px;
+  background-color: aquamarine;
+}
+
+img{
+  width:100% !important;
+  height:100% !important;
+}
+
+.vizualization{
+  width:50% !important;
+  height:50% !important;
 }
 
