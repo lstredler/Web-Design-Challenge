@@ -9,99 +9,98 @@
   </head>
 
 <!--Dropdown Bar-->
-</body>
-<head>
-  <title>Bootstrap Components</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-</head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <div class="navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Menu
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+              <a class="dropdown-item" href="humidity_.html">Humidity Map</a>
+              <a class="dropdown-item" href="data_summary.html">Data Summary</a>
+              <a class="dropdown-item" href="latitude_x.html">Latitude vs X</a>
+              <a class="dropdown-item" href="comparison.html">Comparison Page</a>
+              <div class="dropdown-divider"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Menu
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
-            <a class="dropdown-item" href="humidity_.html">Humidity Map</a>
-            <a class="dropdown-item" href="data_summary.html">Data Summary</a>
-            <a class="dropdown-item" href="latitude_x.html">Latitude vs X</a>
-            <a class="dropdown-item" href="comparison.html">Comparison Page</a>
-            <div class="dropdown-divider"></div>
-          </div>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
 <!--end of navigation bar-->
 
 <!--CONTAINER-->
 
 <div class="container">
-  <section class = "row">
+  <div class = "row">
     <div class = "col-lg-9 col-md-11">
-      <div class= "description content">
+
+      <div class= "box">
         <h1 class = "description header">Description of Assignment</h1>
-        <hr>
         <p>For this homework we'll be creating a visualization dashboard website using visualizations we've created in a past assignment. Specifically, we'll be plotting weather data.
           In building this dashboard, we'll create individual pages for each plot and a means by which we can navigate between them. These pages will contain the visualizations and their corresponding explanations. We'll also have a landing page, a page where we can see a comparison of all of the plots, and another page where we can view the data used to build them.
         </p>        
       </div>
     </div>
     <div class="col-1 col-7">
-      
-<!--visualizations-->
-<section id="imageNav-area">
-  <div class="imageNav-content">
-    <h2 class = "imageNav-header">Visualizations</h2>
-    <div class="container">
-      <div class="row">
-
-        <div class="col-6">
-          <a href="latitude_x.html"> 
-            <img src = "Assets/images/comparison-lg.png" alt="Latitude vs X", title="Latitide vs. X" class = "imageNav-photo">
-          </a>
-        </div>
-          
-        <div class="col-6">
-          <a>
-            href="max_temp.html"> alt="Maximum Temperature", title="Maximum Temperature" class = "imageNav-photo">
-          </a>
-        </div> 
-
-
-          
+      <div class="box">
+      <h2 class="description header">Visualizations</h2>
+      <hr>
+      <div class="container">
+        <div class="row">
           <div class="col-6">
-            <a href="humidity_map.html"> alt="Humidity Map", title="Humidity Map" class = "imageNav-photo">
-          
-           <div class="col-6">
-             <a href="data_summary.html"> alt="Data Summary", title="Data Summary" class = "imageNav-photo">
-          <a href="comparison.html"> alt="Comparison", title="Comparison" class = "imageNav-photo">
-          </a>
+            <a href="latitude_x.html">
+              <img class="panel" src = "Visualizations/images/comparison-lg.png" alt="Latitude vs X">
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="max_temp.html">
+              <img class="panel" src = "Visualizations/images/visualize-lg.png" alt="Maximum Temperature">
+            </a>
+          </div>
+        </div>
         
+        <div class="row">
+          <div class="col-6">
+            <a href="humidity_map.html">
+              <img class="panel" src = "Visualizations/images/data-lg.png" alt="Humidity">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <a href="data_summary.html">
+              <img class="panel" src = "Visualizations/images/landing-sm.png" alt="Data Summary">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <a href="comparison.html">
+              <img class="panel" src = "Visualizations/images/visualize-lg.png" alt="Comparsion">
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+ 
 
+  <!--Bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+</body>
 </html> 
